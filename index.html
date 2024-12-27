@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      .div1 {
+        border: px solid black;
+        background-color: rgb(220, 48, 48);
+        width: 200px;
+        height: 100px;
+        margin: 100px auto;
+        border-radius: 25px;
+        text-align: center;
+        box-shadow: 2px 2px 5px 10px whitesmoke;
+        padding: 30px;
+        text-shadow: 1px 1px white;
+        font-style: italic;
+      }
+      .main{
+        border: px solid black;
+        background-color: rgb(48, 123, 127);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 1px 1px 3px 6px rgb(243, 241, 243);
+        font-size: 30px;
+        margin: auto;
+      }
+
+        h1{
+          font-style: italic;
+          text-align: center;
+          font-size: 60px;
+          text-shadow: 3px 3px red;
+        }
+      
+      
+      section {
+        padding: 20px;
+        background-color: aqua;
+        border: px solid ;
+        box-shadow: 1px 1px 3px 6px rgb(48, 123, 127);
+      }
+      #translation:checked ~.div1 {
+        transform: translate(none);
+      }
+      #rotate:checked ~.div1{
+        transform: rotate(10deg);
+      }
+      #rotate1:checked ~.div1{
+        transform: rotate(45deg);
+      }
+      #rotate2:checked ~.div1{
+        transform: rotate3d(1, 2, 1, 45deg);
+      }
+      #rotate3:checked ~.div1{
+        transform: rotate3d(0, 1, 1, 60deg);
+      }
+      #rotate4:checked ~.div1{
+        transform: rotateX(45deg);
+      }
+      #rotate5:checked ~.div1{
+        transform: rotateX(100deg);
+      }
+      #rotate6:checked ~.div1{
+        transform: rotateY(45deg);
+      }
+      #rotate7:checked ~.div1{
+        transform: rotateY(80deg);
+      }
+      #rotate8:checked ~.div1{
+        transform: rotateZ(45deg);
+      }
+      #rotate9:checked ~.div1{
+        transform: rotateZ(90deg);
+      }
+      #skew:checked ~.div1{
+        transform: skew(20deg,20deg);
+      }
+      #skew1:checked ~.div1{
+        transform: skew(30deg,30deg);
+      }
+      #skew2:checked ~.div1{
+        transform: skewX(30deg);
+      }
+      #skew3:checked ~.div1{
+        transform: skewX(40deg);
+      }
+      #skew4:checked ~.div1{
+        transform: skewY(30deg);
+      }
+      #skew5:checked ~.div1{
+        transform: skewY(40deg);
+      }
+      #translate1:checked ~.div1{
+        transform: translate(20px,10px);
+      }
+      #translate2:checked ~.div1{
+        transform: translate(20px,20px);
+      }
+      #scale:checked ~.div1{
+        transform: scale(2,2);
+      }
+      #scale1:checked ~.div1{
+        transform: scale(2.5,3);
+      }
+      #scale2:checked ~.div1{
+        transform: scaleX(1.5);
+      }
+      #scale3:checked ~.div1{
+        transform: scaleX(50%);
+      }
+      input,h5{
+        display: inline;
+      }
+      h5{
+        border: 1px solid black;
+        background-color: grey;
+        padding: 5px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <section><h1>USING TRANSFORMS IN CSS </h1>
+
+      <div class="main">
+  
+        <input type="radio" id="translation" name="transform" /><h5>translation:none;</h5><br>
+        <input type="radio" id="rotate" name="transform" /> <h5>translation: rotate(10deg) ;</h5><br>
+          <input type="radio" id="rotate1" name="transform" />
+          <h5>translation: rotate(45deg);</h5><br />
+          <input type="radio" id="rotate2" name="transform" />
+          <h5>translation: rotate3d(1, 2, 1, 45deg);</h5><br>
+          <input type="radio" id="rotate3" name="transform" />
+        <h5>translation: rotate3d(0, 1, 1, 60deg);</h5><br />
+          <input type="radio" id="rotate4" name="transform" />
+          <h5>translation: rotateX(45deg);</h5><br />
+          <input type="radio" id="rotate5" name="transform" />
+          <h5>translation: rotateX(100deg);</h5><br />
+          <input type="radio" id="rotate6" name="transform" />
+          <h5>translation: rotateY(45deg);</h5><br />
+          <input type="radio" id="rotate7" name="transform" />
+          <h5>translation: rotateY(80deg);</h5><br />
+          <input type="radio" id="rotate8" name="transform" />
+          <h5>translation: rotateZ(45deg);</h5><br />
+          <input type="radio" id="rotate9" name="transform"  />
+          <h5>translation: rotateZ(90deg);</h5><br />
+          <input type="radio" id="skew" name="transform" />
+          <h5>translation: skew(20deg, 20deg);</h5><br />
+          <input type="radio" id="skew1" name="transform"  />
+          <h5>translation: skew(30deg, 30deg);</h5> <br />
+          <input type="radio" id="skew2" name="transform"  />
+        <h5>translation: skewX(30deg);</h5><br />
+          <input type="radio" id="skew3" name="transform"  />
+          <h5>translation: skewX(40deg);</h5><br />
+          <input type="radio" id="skew4" name="transform" />
+          <h5>translation: skewY(30deg);</h5><br />
+          <input type="radio" id="skew5" name="transform" />
+          <h5>translation: skewY(40deg);</h5>
+          <br />
+          <input type="radio" id="translate1" name="transform" />
+          <h5>translation: translate(20px,10px);</h5><br />
+          <input type="radio" id="translate2" name="transform" />
+          <h5>translation: translate(20px,20px);</h5><br />
+          <input type="radio" id="scale" name="transform" />
+          <h5>translation: scale(2,2);</h5><br />
+          <input type="radio" id="scale1" name="transform" />
+          <h5>translation:scale(2.5,3); </h5><br />
+          <input type="radio" id="scale2" name="transform" />
+          <h5>translation:scaleX(1.5);</h5><br />
+          <input type="radio" id="scale3" name="transform" />
+          <h5>translation:scaleX(50%);</h5><br />
+
+          
+       
+        <div class="div1" >transforms in css</div>
+      </div>
+    </section>
+  </body>
+</html>
